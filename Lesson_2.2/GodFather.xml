@@ -1,0 +1,10 @@
+<Movie>
+	<Title>The Godfather movie</Title>
+	<Director>Francis Ford Coppola</Director>
+	<YearFilmed>1972</YearFilmed>
+	<MainCharacters>
+		<MainCharacter actor="Marlon Brando" name="Don Vito Carleone" />
+		<MainCharacter actor="Michael Carleone" name="Al Pacino" />
+		<MainCharacter actor="Tom Hagen" name="Robert Duval" />
+	</MainCharacters>
+</Movie>

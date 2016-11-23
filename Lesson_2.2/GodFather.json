@@ -1,0 +1,19 @@
+{
+	"title": "The Godfather movie",
+	"director": "Francis Ford Coppola",
+	"yearFilmed": 1972,
+	"mainCharacters": [
+		{
+			"characterName": "Don Vito Carleone",
+			"actorName": "Marlon Brando"
+		},
+		{
+			"characterName": "Michael Carleone",
+			"actorName": "Al Pacino"
+		},
+		{
+			"characterName": "Tom Hagen",
+			"actorName": "Robert Duval"
+		}
+	]
+}
