@@ -1,0 +1,7 @@
+Используйте команду sips
+
+Документация:
+https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/sips.1.html
+
+Пример использования для нашей задачи:
+sips --resampleWidth 200 myphoto.jpg
