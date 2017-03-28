@@ -1,0 +1,9 @@
+ubuntu
+sudo apt-get install imagemagick
+
+rpm-based
+rpm -Uvh ImageMagick-7.0.3-10.x86_64.rpm
+
+Исходники и пакеты:
+https://www.imagemagick.org/script/binary-releases.php
+
