@@ -42,4 +42,42 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 
 if __name__ == '__main__':
     # ваша логика
+    
+import os.path
+import chardet
+
+def make_files_list(): 
+  migrations_dir = os.path.join(current_dir, migrations)
+  file_list = os.listdir(path=migrations_dir)
+  return file_list
+
+def sql_list(file_list):
+  proper_files = list()
+  for i in file_list:
+    filter(lambda x: x.endswith('.sql'), files)  # only sql files 
+    proper_files.append(i)
+  return proper_files
+
+def readable_files(file_name):
+  with open(os.path.join(current_dir, migrations, file_name), 'rb') as l:
+    info = l.read()
+    result = chardet.detect(info)
+    info = info.decode(result['encoding'])
+  return info
+  
+def find_string(sql_list):
+  file_list = sql_list
+  while True: 
+    search = input('Write your string: ') 
+    files_inside = list() 
+    for file_name in file_list: 
+      if search in readable_files(file_name):
+        files_inside.append(file_name)
+        print(file_name)
+    print('Всего: {0}'.format(len(files_inside)))
+    file_list = files_inside
+ 
+if __name__ == '__main__':
+    find_string(sql_list(make_files_list()))
+    
     pass
